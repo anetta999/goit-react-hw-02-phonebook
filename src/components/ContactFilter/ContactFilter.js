@@ -1,8 +1,10 @@
+import { FilterInput, FilterText } from './ContactFilter.styled';
+
 export const ContactFilter = ({ filter, onfilterContactsByName }) => {
   return (
     <>
-      <p>Find contacts by name</p>
-      <input
+      <FilterText>Find contacts by name</FilterText>
+      <FilterInput
         type="text"
         value={filter}
         onChange={evt => {
